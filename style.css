@@ -6,20 +6,20 @@
     font-family: 'Poppins',sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-body{
+body {
     background: #0a2a43;
     min-height: 1500px;
     background-image: URL(assets/bg.jpg);
     background-attachment: fixed;
+    background-size: cover;
 }
 
-
-section{
+section {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -27,32 +27,31 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-section::before{
+section::before {
     content: '';
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top,#0a2a43 ,transparent);
+    background: linear-gradient(to top, #0a2a43, transparent);
     z-index: 1000;
 }
 
-
-section::after{
+section::after {
     content: '';
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top,#0a2a43 ,transparent 80%);
+    background: linear-gradient(to top, #0a2a43, transparent 80%);
     z-index: 1000;
     mix-blend-mode: color;
 }
 
-
-section img{
+section img {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +60,6 @@ section img{
     object-fit: cover;
     pointer-events: none;
 }
-
 #text{
 position: relative;
 color: #fff;
@@ -504,6 +502,25 @@ z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+    section {
+        height: auto;
+        padding: 20px;
+    }
+
+    section::before,
+    section::after {
+        height: 50px;
+    }
+
+    section img {
+        object-fit: contain;
+    }
+
     .program{
         display: flex;
         flex-direction: column;
@@ -545,5 +562,13 @@ z-index: 1;
 }
 
 
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
 
+    section {
+        padding: 10px;
+    }
+}
 
