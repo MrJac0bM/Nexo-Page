@@ -556,7 +556,7 @@ z-index: 1;
     }
 
     section {
-        height: auto;
+        height: 100vh;
         padding: 20px;
     }
 
@@ -657,6 +657,12 @@ z-index: 1;
         width: 100%;
     }
     .about__details-description{
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: justify;
     }
     .about__details-button{
