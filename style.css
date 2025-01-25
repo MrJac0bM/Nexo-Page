@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
 
@@ -10,18 +11,25 @@ a {
     text-decoration: none;
     color: #000;
 }
-
-body {
-    background: #0a2a43;
-    min-height: 1500px;
+.contenedor-global{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     background-image: URL(assets/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
+body {
+    background: #0a2a43;
+    min-height: 1500px;
+
+}
+
 section {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -34,7 +42,7 @@ section::before {
     content: '';
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background: linear-gradient(to top, #0a2a43, transparent);
     z-index: 1000;
@@ -44,7 +52,7 @@ section::after {
     content: '';
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: linear-gradient(to top, #0a2a43, transparent 80%);
     z-index: 1000;
@@ -55,7 +63,7 @@ section img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     pointer-events: none;
@@ -77,6 +85,8 @@ z-index: 1;
     justify-content: space-between;
     padding: 20px 40px;
     background-image: url(assets/bg.jpg);
+    width: 100vw; 
+    position: relative;
 }
 
 .navbar__logo{
@@ -502,9 +512,20 @@ z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .navbar img{
+        margin: auto;
+    }
+    .navbar__menu, .navbar__notch{
+        display: none;
+    }
     body {
         background-attachment: scroll;
-        background-size: cover;
     }
 
     section {
