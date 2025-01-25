@@ -176,11 +176,12 @@ z-index: 1;
 
 .separator{
     display: block;
-    margin: 3rem 0 3rem;
+    margin: 4rem 0 4rem;
     text-align: center;
     font-size: 3rem;
     font-weight: 600;
     padding: 0 4rem;
+    gap: 3rem;
     color: white;
     animation: autoShowAnimation both;
     animation-timeline: view(70% 5%);
@@ -545,10 +546,7 @@ z-index: 1;
         height: 100%; /* Ajusta la imagen para que no se deforme */
         width: auto;
     }
-    .separator{
-        margin: 20px 0 0 0 ;
-        padding:  20px 0 0 0 ;
-    }
+
     #text {
         font-size: 5em; /* Reduce el tamaño del texto */
         padding: 0 10px; /* Añade espacio lateral si es necesario */
