@@ -512,9 +512,12 @@ z-index: 1;
 }
 
 @media screen and (max-width: 1080px) {
+    .contenedor-global{
+        background-attachment: scroll 
+    }
 
     .section{
-        height: 100vh;
+        height: 100%;
     }
     section {
         height: 100%; /* Ajusta la altura para móviles */
@@ -522,7 +525,7 @@ z-index: 1;
     }
 
     section::before {
-        height: 100vh; /* Reduce el tamaño del gradiente */
+        height: 100%; /* Reduce el tamaño del gradiente */
     }
 
     section::after {
@@ -533,7 +536,7 @@ z-index: 1;
 
     section img {
         overflow: auto;
-        height: 100vh; /* Ajusta la imagen para que no se deforme */
+        height: 100%; /* Ajusta la imagen para que no se deforme */
         width: auto;
     }
 
@@ -557,7 +560,7 @@ z-index: 1;
     }
 
     section {
-        height: 100vh;
+        height: 100%;
         padding: 20px;
     }
 
@@ -588,11 +591,11 @@ z-index: 1;
 
     }
     .program__image{
-        width: 80vw;
+        width: 80%;
         height: auto;
     }
     .course-list{
-        width: 80vw;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -600,7 +603,7 @@ z-index: 1;
         margin: auto;
     }
     .course-list__item{
-        width: 80vw;
+        width: 80%;
     }
     .course-list__item img{
         width: 100%;
@@ -627,7 +630,7 @@ z-index: 1;
         width: 100%;
     }
     .career img {
-        width: 80vw;
+        width: 80%;
     }
     .career__details{
         display: flex;
@@ -640,7 +643,7 @@ z-index: 1;
         padding: 30px;
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 80%;
         height: auto;
         margin: 20px auto;
         animation: none;
@@ -691,7 +694,7 @@ z-index: 1;
         flex-direction: column;
     }
     .footer__branding img{
-        width: 20vw;
+        width: 20%;
         height: auto;
         margin: 30px auto;
     }
