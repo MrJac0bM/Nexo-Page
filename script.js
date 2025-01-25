@@ -17,3 +17,5 @@ window.addEventListener('scroll',()=>{
     road.style.top = value*0.15 +'px'
     text.style.top = value*1 +'px'
 })
+
+console.log('responsive 1.4');
