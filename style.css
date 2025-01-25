@@ -517,7 +517,7 @@ z-index: 1;
     }
 
     .section{
-        height: 100%;
+        height: 100vh;
     }
     section {
         height: 100%; /* Ajusta la altura para móviles */
@@ -577,6 +577,9 @@ z-index: 1;
         display: flex;
         flex-direction: column;
     }
+    .program__image img{
+        height: auto;
+    }
     .program__info{
         margin: auto;
         width: 90%;
@@ -595,7 +598,7 @@ z-index: 1;
         height: auto;
     }
     .course-list{
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
