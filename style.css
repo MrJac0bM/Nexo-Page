@@ -511,7 +511,7 @@ z-index: 1;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
 
     .section{
         height: 100vh;
